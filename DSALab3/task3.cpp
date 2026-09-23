@@ -96,6 +96,11 @@ public:
 
     // 6 reverseing list 
     void reverseList() {
+        if (head == nullptr) {
+            cout << "list is empty. cannot reverse." << endl;
+            return;
+        }
+
         Node* prev = nullptr;
         Node* current = head;
         Node* nextNode = nullptr;
